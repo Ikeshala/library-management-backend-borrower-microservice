@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac049004-74fc-45f5-952d-7ea38531bfb3" name="Changes" comment="Added the dependencies &quot;spring-boot-starter-data-jpa&quot; and &quot;mysql-connector-java&quot; to the project.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="ac049004-74fc-45f5-952d-7ea38531bfb3" name="Changes" comment="Added the ModelMapper dependency to the project.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/icet/edu/borrower/entity/BorrowerEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/icet/edu/borrower/repository/BorrowerRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/icet/edu/borrower/controller/BorrowerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/icet/edu/borrower/controller/BorrowerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/icet/edu/borrower/dto/Borrower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/icet/edu/borrower/dto/Borrower.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/icet/edu/borrower/service/impl/BorrowerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/icet/edu/borrower/service/impl/BorrowerServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -49,6 +48,11 @@
     "onboarding.tips.debug.path": "D:/ICM104/8. Internet Technologies/WORKING/library-management-backend/library-management-backend-borrower-microservice/src/main/java/icet/edu/borrower/Main.java"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="icet.edu.borrower.entity" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="icet.edu.borrower.Main" />
@@ -126,7 +130,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708279487428</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Created the yml file for configuration.">
+      <option name="closed" value="true" />
+      <created>1708281460432</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1708281460432</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added the ModelMapper dependency to the project.">
+      <option name="closed" value="true" />
+      <created>1708285325829</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1708285325829</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -137,6 +157,8 @@
     <MESSAGE value="Added Lombok dependency." />
     <MESSAGE value="Completed the implementation of the &quot;addBorrower&quot; method." />
     <MESSAGE value="Added the dependencies &quot;spring-boot-starter-data-jpa&quot; and &quot;mysql-connector-java&quot; to the project." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the dependencies &quot;spring-boot-starter-data-jpa&quot; and &quot;mysql-connector-java&quot; to the project." />
+    <MESSAGE value="Created the yml file for configuration." />
+    <MESSAGE value="Added the ModelMapper dependency to the project." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the ModelMapper dependency to the project." />
   </component>
 </project>
