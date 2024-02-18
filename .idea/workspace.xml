@@ -4,13 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac049004-74fc-45f5-952d-7ea38531bfb3" name="Changes" comment="Added the &quot;spring-boot-starter-web&quot; dependency.">
-      <change beforePath="$PROJECT_DIR$/src/main/java/icet/edu/borrower/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/icet/edu/borrower/Main.java" afterDir="false" />
+    <list default="true" id="ac049004-74fc-45f5-952d-7ea38531bfb3" name="Changes" comment="Added the dependencies &quot;spring-boot-starter-data-jpa&quot; and &quot;mysql-connector-java&quot; to the project.">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/icet/edu/borrower/controller/BorrowerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/icet/edu/borrower/controller/BorrowerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/icet/edu/borrower/service/impl/BorrowerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/icet/edu/borrower/service/impl/BorrowerServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,10 +44,31 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "onboarding.tips.debug.path": "D:/ICM104/8. Internet Technologies/WORKING/library-management-backend/library-management-backend-borrower-microservice/src/main/java/icet/edu/borrower/Main.java"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="icet.edu.borrower.Main" />
+      <module name="library-management-backend-borrower-microservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="icet.edu.borrower.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -60,13 +94,49 @@
       <option name="project" value="LOCAL" />
       <updated>1708275854909</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Configured to be a Spring Boot application using the @SpringBootApplication annotation.">
+      <option name="closed" value="true" />
+      <created>1708276335543</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708276335543</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added Lombok dependency.">
+      <option name="closed" value="true" />
+      <created>1708277492295</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708277492295</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Completed the implementation of the &quot;addBorrower&quot; method.">
+      <option name="closed" value="true" />
+      <created>1708279093243</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1708279093243</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added the dependencies &quot;spring-boot-starter-data-jpa&quot; and &quot;mysql-connector-java&quot; to the project.">
+      <option name="closed" value="true" />
+      <created>1708279487428</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708279487428</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added the &quot;spring-boot-starter-parent&quot; dependency." />
     <MESSAGE value="Added the &quot;spring-boot-starter-web&quot; dependency." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the &quot;spring-boot-starter-web&quot; dependency." />
+    <MESSAGE value="Configured to be a Spring Boot application using the @SpringBootApplication annotation." />
+    <MESSAGE value="Added Lombok dependency." />
+    <MESSAGE value="Completed the implementation of the &quot;addBorrower&quot; method." />
+    <MESSAGE value="Added the dependencies &quot;spring-boot-starter-data-jpa&quot; and &quot;mysql-connector-java&quot; to the project." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the dependencies &quot;spring-boot-starter-data-jpa&quot; and &quot;mysql-connector-java&quot; to the project." />
   </component>
 </project>
