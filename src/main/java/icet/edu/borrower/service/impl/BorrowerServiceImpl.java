@@ -6,7 +6,6 @@ import icet.edu.borrower.repository.BorrowerRepository;
 import icet.edu.borrower.service.BorrowerService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
