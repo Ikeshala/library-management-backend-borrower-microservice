@@ -7,4 +7,5 @@ public interface BorrowerService {
     void addBorrower(Borrower borrower);
     Iterable<BorrowerEntity> getBorrowers();
     boolean deleteBorrower(Long bid);
+    Borrower getBorrowerId(Long bid);
 }

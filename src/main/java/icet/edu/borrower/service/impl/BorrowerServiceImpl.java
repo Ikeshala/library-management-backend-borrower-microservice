@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 @RequiredArgsConstructor
 public class BorrowerServiceImpl implements BorrowerService {
@@ -36,5 +38,11 @@ public class BorrowerServiceImpl implements BorrowerService {
             repository.deleteById(bid);
             return true;
         }else { return false;}
+    }
+
+    @Override
+    public Borrower getBorrowerId(Long bid) {
+        Optional<BorrowerEntity> byId = repository.findById(bid);
+        return mapper.map(byId, Borrower.class);
     }
 }

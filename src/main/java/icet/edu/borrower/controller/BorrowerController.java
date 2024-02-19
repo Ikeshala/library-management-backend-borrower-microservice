@@ -18,10 +18,12 @@ public class BorrowerController {
     public void addBorrower(@RequestBody Borrower borrower){
         service.addBorrower(borrower);
     }
+
     @GetMapping("/get")
     public Iterable<BorrowerEntity> getBorrowers(){
         return service.getBorrowers();
     }
+
     @DeleteMapping("/{bid}")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<String> deleteBorrower(@PathVariable Long bid) {
@@ -32,5 +34,10 @@ public class BorrowerController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND)
                     .body("Borrower not found!");
         }
+    }
+
+    @GetMapping("search/{bid}")
+    public Borrower getBorrowerById(@PathVariable Long bid){
+        return service.getBorrowerId(bid);
     }
 }
