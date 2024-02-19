@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac049004-74fc-45f5-952d-7ea38531bfb3" name="Changes" comment="Added Swagger using the `springdoc-openapi-starter-webmvc-ui` dependency." />
+    <list default="true" id="ac049004-74fc-45f5-952d-7ea38531bfb3" name="Changes" comment="Added @CrossOrigin annotation to enable cross-origin resource sharing (CORS).">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,17 +34,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/ICM104/8. Internet Technologies/WORKING/library-management-backend/library-management-backend-borrower-microservice",
-    "onboarding.tips.debug.path": "D:/ICM104/8. Internet Technologies/WORKING/library-management-backend/library-management-backend-borrower-microservice/src/main/java/icet/edu/borrower/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ICM104/11. Project Development/WORKING/library-management-backend/library-management-backend-borrower-microservice&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/ICM104/8. Internet Technologies/WORKING/library-management-backend/library-management-backend-borrower-microservice/src/main/java/icet/edu/borrower/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="icet.edu.borrower.entity" />
@@ -181,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708327340456</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added @CrossOrigin annotation to enable cross-origin resource sharing (CORS).">
+      <option name="closed" value="true" />
+      <created>1708342443607</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1708342443607</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -199,6 +209,7 @@
     <MESSAGE value="Implemented the DELETE API functionality." />
     <MESSAGE value="Implemented the search functionality by ID." />
     <MESSAGE value="Added Swagger using the `springdoc-openapi-starter-webmvc-ui` dependency." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Swagger using the `springdoc-openapi-starter-webmvc-ui` dependency." />
+    <MESSAGE value="Added @CrossOrigin annotation to enable cross-origin resource sharing (CORS)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added @CrossOrigin annotation to enable cross-origin resource sharing (CORS)." />
   </component>
 </project>

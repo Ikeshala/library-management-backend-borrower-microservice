@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 public class Borrower {
+    private Long bid;
     private String name;
     private String contact;
     private String address;
