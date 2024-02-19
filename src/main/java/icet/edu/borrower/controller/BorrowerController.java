@@ -1,20 +1,24 @@
 package icet.edu.borrower.controller;
 
 import icet.edu.borrower.dto.Borrower;
+import icet.edu.borrower.entity.BorrowerEntity;
 import icet.edu.borrower.service.BorrowerService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/borrower")
+@RequiredArgsConstructor
 public class BorrowerController {
-    @Autowired
-    BorrowerService service;
-    @PostMapping
+    final BorrowerService service;
+    @PostMapping("/add")
+    @ResponseStatus(HttpStatus.CREATED)
     public void addBorrower(@RequestBody Borrower borrower){
         service.addBorrower(borrower);
+    }
+    @GetMapping("/get")
+    public Iterable<BorrowerEntity> getBorrowers(){
+        return service.getBorrowers();
     }
 }
