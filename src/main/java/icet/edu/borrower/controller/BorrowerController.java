@@ -5,6 +5,7 @@ import icet.edu.borrower.entity.BorrowerEntity;
 import icet.edu.borrower.service.BorrowerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -20,5 +21,16 @@ public class BorrowerController {
     @GetMapping("/get")
     public Iterable<BorrowerEntity> getBorrowers(){
         return service.getBorrowers();
+    }
+    @DeleteMapping("/{bid}")
+    @ResponseStatus(HttpStatus.OK)
+    public ResponseEntity<String> deleteBorrower(@PathVariable Long bid) {
+        boolean deletionSuccessful = service.deleteBorrower(bid);
+        if (deletionSuccessful) {
+            return ResponseEntity.ok("Borrower deleted successfully!");
+        } else {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                    .body("Borrower not found!");
+        }
     }
 }

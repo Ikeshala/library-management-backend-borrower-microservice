@@ -6,4 +6,5 @@ import icet.edu.borrower.entity.BorrowerEntity;
 public interface BorrowerService {
     void addBorrower(Borrower borrower);
     Iterable<BorrowerEntity> getBorrowers();
+    boolean deleteBorrower(Long bid);
 }

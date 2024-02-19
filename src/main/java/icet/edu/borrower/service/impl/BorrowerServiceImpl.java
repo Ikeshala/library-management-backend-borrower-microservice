@@ -29,4 +29,12 @@ public class BorrowerServiceImpl implements BorrowerService {
     public Iterable<BorrowerEntity> getBorrowers() {
         return repository.findAll();
     }
+
+    @Override
+    public boolean deleteBorrower(Long bid) {
+        if (repository.existsById(bid)) {
+            repository.deleteById(bid);
+            return true;
+        }else { return false;}
+    }
 }
