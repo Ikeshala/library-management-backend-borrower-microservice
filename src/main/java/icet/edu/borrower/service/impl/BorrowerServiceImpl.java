@@ -4,9 +4,9 @@ import icet.edu.borrower.dto.Borrower;
 import icet.edu.borrower.entity.BorrowerEntity;
 import icet.edu.borrower.repository.BorrowerRepository;
 import icet.edu.borrower.service.BorrowerService;
+import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -16,7 +16,7 @@ import java.util.Optional;
 public class BorrowerServiceImpl implements BorrowerService {
     final BorrowerRepository repository;
     ModelMapper mapper;
-    @Bean
+    @PostConstruct
     public void setup(){
         this.mapper=new ModelMapper();
     }
